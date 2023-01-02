@@ -1,0 +1,19 @@
+[[language]]
+name = "python"
+
+[language.config.pylsp.plugins]
+autopep8 = {enabled = false}
+flake8 = {enabled = true, maxLineLength = 120, ignore = []}
+pycodestyle = {enabled = false}
+pylint = {enabled = false}
+
+[language.formatter]
+args = ["-", "-l", "120"]
+command = "black"
+
+[[language]]
+name = "json"
+
+[language.formatter]
+args = ["-m", "json.tool"]
+command = "python3"
