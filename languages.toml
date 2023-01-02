@@ -15,5 +15,5 @@ command = "black"
 name = "json"
 
 [language.formatter]
-args = ["-m", "json.tool"]
-command = "python3"
+args = []
+command = "jq"
